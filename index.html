@@ -1,0 +1,192 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8"/>
+	<title>CSS cheat sheet</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <div id="header-container">
+    <div class="main-container">
+      <header id="title-header">
+        <div class="main-container">
+          <h1>CSS Cheat Sheet</h1>
+        </div>
+      </header>
+
+      <nav id="navbar">
+        <div class="core">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Servies</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <section id=showcase>
+    <div class="main-container">
+      <h1>Using CSS every day? Whether you’re web developer or just someone who wants to learn web development</h1>
+      <p>
+        This CSS cheat sheet should help you out.
+      </p>
+    </div>
+  </section>
+
+  <div class="main-container">
+    <div id="main-intro-container">
+      <section id="main">
+          <h1>Welcome to CSS world</h1>
+          <p>
+            I made this for my self to learn more about CSS. But I wanted to share this project with others, who likes to learn CSS. 
+            <br>
+          </p>
+          <p>
+            So here you have it, structured into different paragraphs, just as: backgrounds, borders, fonts, texts, Column, Colours, Grid positioning and a lot more.  
+          </p>
+      </section>
+
+      <aside id="main-sidebar">
+          <h3>This is a Header</h3>
+          <p>
+
+            This article is light grey and the text is brown. This article is light grey and the text is brown. This article is light grey and the text is brown. This article is light grey and the text is brown.
+          </p>
+      </aside>
+      <div class="clr"></div>
+      
+    </div>
+  </div>
+
+  <div class="main-container">
+    
+    <!-- 
+      Need to clear floats because floated elements are removed from normal document flow and essentially have no height within that normal flow. Clearing the floats, in essence, gives back the height to the element in normal document flow, so that elements below do not rise up behind the floated elements. 
+    -->
+    <div class="services">
+      <div class="block">
+        <h2>Backgrounds</h2>
+        <p>
+          Learn to code from an expert. Colt has taught more than 250,000 students how to code online. This new bootcamp features 100+ online coding challenges, and 20+ hours of instructional video.
+        </p>
+      </div>
+      <div class="block">
+        <h2>Border</h2>
+        <p>
+          Learn to code from an expert. Colt has taught more than 250,000 students how to code online. This new bootcamp features 100+ online coding challenges, and 20+ hours of instructional video.
+        </p>
+      </div>
+      <div class="block">
+        <h2>Box Model</h2>
+        <p>
+          Learn to code from an expert. Colt has taught more than 250,000 students how to code online. This new bootcamp features 100+ online coding challenges, and 20+ hours of instructional video.
+        </p>
+      </div>
+    </div>
+
+    <!-- same as ".services:after" class-->
+    <!-- <div style="clear: both;"></div> -->
+  </div>
+
+  <div class="main-container">
+    <article class="blog">    
+      <h2>Best way to include CSS?</h2>
+      <p>
+        From a page speed standpoint, @import from a CSS file should almost never be used, as it can prevent stylesheets from being downloaded concurrently. For instance, if stylesheet A contains the text:
+      </p>
+
+      <span id="code-line">@import url("stylesheetB.css");</span>
+      <p>
+        then the download of the second stylesheet may not start until the first stylesheet has been downloaded. If, on the other hand, both stylesheets are referenced in elements in the main HTML page, both can be downloaded at the same time. If both stylesheets are always loaded together, it can also be helpful to simply combine them into a single file.        
+      </p>
+      <p>
+        There are occasionally situations where @import is appropriate, but they are generally the exception, not the rule. 
+      </p>
+      <a href="#" class="button">Read More</a>
+    </article>
+    
+  </div>
+  
+  <div class="main-container">
+    <div class="position-box">
+      <h2>Vector Background Image</h2>
+      <div class="info">
+        The position property specifies the type of positioning method used for an element.
+        <br>
+        There are five different position values:
+          <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+          </ul>
+        Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+      </div>
+      <p>www.hdwpro.com</p>      
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div id='lists-core'>
+      <section class="categories">
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="#">category 001</a></li>
+          <li><a href="#">category 002</a></li>
+          <li><a href="#">category 003</a></li>
+          <li><a href="#">category 004</a></li>
+          <li><a href="#">category 005</a></li>
+          <li><a href="#">category 006</a></li>
+          <li><a href="#">category 007</a></li>
+          <li><a href="#">category 008</a></li>
+        </ul>
+      </section>
+
+      <section class="my-list">
+        <h2>My List Items</h2>
+        <ul>
+          <li>my item 01</li>
+          <li>my item 02</li>
+          <li>my item 03</li>
+          <li>my item 04</li>
+          <li>my item 05</li>
+          <li>my item 06</li>
+          <li>my item 07</li>
+          <li>my item 08</li>
+          <li>my item 09</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  
+  <form class="my-form">
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" name="name">    
+      </div>
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="text" name="email">    
+      </div>
+      <div class="form-group">
+        <label>Message:</label>
+        <textarea name='message'></textarea>    
+      </div>
+      <input class="button" type="submit" id="submit" value="Submit">
+    </form>
+
+  <div class="main-container">
+    <footer id="main-footer">
+      <p>© 2018 CssCheatSheet. All rights reserved.</p>
+    </footer>
+  </div>
+
+  </div> <!--container end-->
+  <a class="fix-button" href="">Fixed..</a>
+</body>
+</html>

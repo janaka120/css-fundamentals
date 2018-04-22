@@ -1,0 +1,411 @@
+/*
+
+  " * " for all
+  * {
+    color : yellow; 
+  }
+
+*/
+
+body {
+  background-color: #f4f4f4;
+  
+  font-family: Arial;
+  font-size: 14px;
+  
+  color: #062942;
+
+  margin: 0;
+
+  padding: 75px 3px 0 3px;
+}
+
+h1, h2, h3 {
+  font-family: "Franklin-Gothic-URW-Book";
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  color: #000;
+  font-size: 30px;
+  margin-top: 0px; 
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #0d92ef;
+}
+
+p {
+  color: #062942;
+  font-family: "Franklin-Gothic-URW";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.55555556; 
+}
+
+.main-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#code-line {
+  background-color: #333;
+  padding: 10px 5px;
+}
+
+#header-container {
+  background-color: #fff;
+  padding: 0 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index:1;
+}
+
+#header-container:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+#title-header {
+  float: left;
+  width: 25%;
+  color: #0d83dd;
+}
+
+#navbar {
+  float: left;
+  width: 75%;
+  margin-top: 20px;
+}
+
+#navbar .core {
+  float: right;
+  display: inline-block;
+}
+
+#navbar ul {
+  padding: 0;
+  list-style: none;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 10px; 
+}
+
+#header-container #navbar a {
+  color: #062942;
+}
+
+#showcase {
+  background-image: url('../images/showcase_background_iamge.jpg');
+  min-height: 500px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#showcase h1 {
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.6em;
+  padding-top: 30px;
+}
+
+#main-intro-container {
+  margin: 20px 30px 40px 0;
+}
+
+#main {
+  float: left;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#main-sidebar {
+  float: right;
+  width: 30%;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  box-sizing: border-box;
+
+}
+
+#main-sidebar p {
+  color: #ffffff;
+}
+
+#main-footer {
+  background: #333;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#main-footer p{
+  color: #fff;
+}
+
+.button {
+  background-color: #85c525;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #aad662;
+  color: #fff;
+}
+
+.block {
+  float: left;
+  width: 31.3%;
+  box-sizing: border-box;
+  
+  padding: 10px;
+  margin: 0px 1%;
+  
+  border: 1px #ccc solid;
+  border-radius: 25px;
+}
+
+.block h2 {
+  color: #0d83dd;
+  text-align: center;
+}
+
+.block p {
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.clr {
+  clear: both;
+}
+
+.blog {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+
+  color: #fff;
+}
+
+/*
+ * every <h2/> element with in the "blog" 
+ */
+.blog h2 {
+  font-style: italic;
+
+  text-decoration: underline;
+  text-transform: uppercase;
+  
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.blog p {
+  font-size: 0.9rem;
+  line-height: 1.35555556;
+}
+
+#lists-core {
+  background-color: #fff;
+  padding: 40px 0 40px 0;
+}
+
+#lists-core:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#lists-core h2 {
+  color: #0d83dd;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#lists-core li {
+  /*text-align: center;*/
+  line-height: 1.6em;
+  font-size: 1rem;
+}
+
+.categories {
+  margin: 0px;
+  padding: 0px;
+
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+.categories ul {
+  padding:0 30px;
+  list-style: none;
+  margin-left: 10px;
+  /*padding-right: 30px;*/
+  border-right: 1px #333 solid;
+}
+
+.categories li {
+  margin-bottom: 3px;
+  border-bottom: 1px #333 dotted;
+  list-style-image: url('../images/checked_mark.png'); 
+}
+
+.categories a {
+  color: #000;
+}
+
+.my-list {
+  margin: 0;
+  float: right;
+  width: 50%;
+  box-sizing: border-box;   
+}
+
+.my-list h2 {
+  text-align: center;
+}
+
+.my-list ul {
+  padding:0 40px;
+  /*padding-right: 30px;*/
+}
+
+.my-list li:first-child {
+  background: #3e7ce0;
+}
+
+.my-list li:last-child {
+  background: #FFC200;
+}
+
+.my-list li:nth-child(4) {
+  background: #e05028;
+}
+
+.my-list li:nth-child(even) {
+  background: #939393;
+}
+
+.my-form {
+  margin: 40px 20px;
+  padding: 10px 0px;
+}
+
+.my-form .form-group {
+  padding-bottom: 10px;
+}
+
+.my-form label {
+  display: block;
+}
+
+.my-form input[type='text'], .my-form textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+.services {
+  padding: 60px 0 60px 0;
+  background-color: #ffffff;
+}
+
+.services:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.position-box {
+  position: relative;
+  width: 900px;
+  height: 450px;
+  border: 1px solid #000;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 60px;
+  background-image: url('../images/art_background_image.png');
+  background-repeat: no-repeat;
+}
+
+.position-box h2 {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+
+  font-size: 2.2rem;
+}
+
+.position-box p {
+  position: absolute;
+  bottom: 10px;
+  right: 30px; 
+}
+
+.position-box .info {
+  position: absolute;
+  top: 100px;
+  left: 100px; 
+  color: #fff;
+
+  font-size: 1rem;
+  line-height: 1.55555556;
+}
+
+.fix-button {
+  top: 200px;
+  position: fixed;
+  background-color: #efcb2b;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+/*use media-queries to make responsive web design */
+@media(max-width: 600px) {
+  #main {
+    width: 100%;
+    float: none;
+  }
+
+  #main-sidebar {
+    width: 100%;
+    float: none;
+  }
+}
